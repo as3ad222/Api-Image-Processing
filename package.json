@@ -1,0 +1,37 @@
+{
+  "name": "api-image-processing",
+  "version": "1.0.0",
+  "description": "this first project in udacity show image using api and resize the picture ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/as3ad222/Api-Image-Processing.git"
+  },
+  "author": "Asaad Mohammed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/as3ad222/Api-Image-Processing/issues"
+  },
+  "homepage": "https://github.com/as3ad222/Api-Image-Processing#readme",
+  "devDependencies": {
+    "@types/jasmine": "^4.0.0",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "prettier": "^2.6.0",
+    "supertest": "^6.2.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
