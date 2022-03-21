@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.ts",
-    "build": "tsc",
-    "test": "tsc && jasmine"
+    "build": "npx tsc",
+    "lint": "eslint src**/*.ts",
+    "lint-fix": "eslint src**/*.ts --fix",
+    "jasmine": "npx tsc && jasmine",
+    "test": "npm run build && npm run jasmine",
+    "prettier": "prettier --config .prettierrc src/**/*.ts --write"
   },
   "repository": {
     "type": "git",
@@ -35,6 +39,7 @@
     "typescript": "^4.6.2"
   },
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "sharp": "^0.30.3"
   }
 }
