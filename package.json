@@ -4,7 +4,9 @@
   "description": "this first project in udacity show image using api and resize the picture ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "tsc && jasmine"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/as3ad222/Api-Image-Processing#readme",
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/jasmine": "^4.0.0",
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
