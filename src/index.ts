@@ -1,11 +1,16 @@
 import express from 'express';
-import routes from './routes/index';
+import routes from './routes/';
+
+
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.get('/', routes)
+app.use(routes);
 
 app.listen(port, () => {
-    console.log(`Server listening on port${port}`)
-})
+    
+    console.log(`Server listening on port${port}`);
+});
+
+export default app;
