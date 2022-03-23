@@ -1,11 +1,21 @@
 # Api-Image-Processing
 
-**Scripts**
+## Scripts
+# configration for RUN this API
 
-configration for RUN this API
 
-* npm i     install all Dependencies
-* npm run start   build project and run using nodemon
-* npm run build   build the project
-* npm run dev     run nodemon for wathing project
-* npm run test    run test functionality
+
+| command  | function |
+| -------- |:--------:|
+| npm i     | install all Dependencies    |
+| npm run start      | build project and run using nodemon     |
+| npm run test     | run test functionality     |
+| npm run lint      | run linting for found error synatx in code      |
+| npm run lin-fix      | found error syntax and fix them     |
+| npm run prettier      | run for formating code    |
+
+## Test url Resize
+
+```
+http://localhos:3000/image?filename=icelandwaterfall&width=200&height=200 
+```
