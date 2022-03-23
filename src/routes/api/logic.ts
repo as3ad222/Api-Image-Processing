@@ -17,12 +17,12 @@ image.get('/', async(req: express.Request, res: express.Response) => {
     }
 
     if (!filename || !width || !height || isNaN(Number(width)) || isNaN(Number(height))){
-        return res.status(400).send("Error, need add parameter");
+        return res.status(400).send("Error, need add parameter width= &  height=");
     }
     
-    // if (filename === undefined) {
-    //     return res.status(400).send(`Bad request, query filename ${filename} is required`);
-    // }
+    if (filename === undefined) {
+        return res.status(400).send(`Bad request, query filename ${filename} is required`);
+    }
     if(checkType(String(filename))){
         return res.status(400).send("Error, filename must be remove extension");
     }
@@ -35,9 +35,7 @@ image.get('/', async(req: express.Request, res: express.Response) => {
         createDir(outDir);
     }
 
-    // if(existsSync(imgLocation)=== false) {
-    //     return res.status(404).send('File is not found ')
-    // }
+ 
     const outImage = outDir + `${filename}-thumbnail-${width}x${height}.jpg`;
     if (fileExists(outImage)){
         res.sendFile(outImage);
