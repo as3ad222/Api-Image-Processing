@@ -3,7 +3,7 @@ import image from "./api/logic";
 
 const routes = express.Router();
 
-routes.get('/', (req: express.Request, res: express.Response) => {
+routes.get('/', (req: express.Request, res: express.Response): void => {
     res.send('connected from main api routes');
 });
 

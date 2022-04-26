@@ -6,7 +6,7 @@ describe('Testing for file Exist ', () =>{
         expect(fileExists(join(__dirname, '../..'))).toBeTrue
     });
 
-    it('Testing Not found files r', async () => {
+    it('Testing Not found files ', async () => {
         expect(fileExists(join(__dirname, 'thumb'))).toBeFalse
     })
 

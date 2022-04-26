@@ -17,5 +17,5 @@
 ## Test url Resize
 
 ```
-http://localhos:3000/image?filename=icelandwaterfall&width=200&height=200 
+http://localhost:3000/image?filename=icelandwaterfall&width=200&height=200 
 ```
